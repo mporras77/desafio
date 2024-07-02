@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Especificación del tipo de documento y configuración de caracteres -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Preconexión a Google Fonts para mejorar el rendimiento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Carga de fuentes desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Enlace al archivo de estilos local -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Título de la página -->
+    <title>JS Game</title>
+</head>
+
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Contenedor secundario para el contenido principal -->
+        <div class="container__contenido">
+            <!-- Imagen de un robot -->
+            <img src="./img/robot.png" alt="Robot" class="container__imagen-robot" />
+
+            <!-- Contenedor para las informaciones (icono de trofeo y texto) -->
+            <div class="container__informaciones">
+                <!-- Imagen de un trofeo con identificador 'trophy' -->
+                <img src="./img/trophy.png" alt="Icono de trofeo" id="trophy" />
+
+                <!-- Contenedor de texto con identificador 'result-message' -->
+                <div class="container__texto" id="result-message">
+                    <!-- Encabezado principal -->
+                    <h1><span class="container__texto-azul">Correcto!</span></h1>
+                    <!-- Subtítulo -->
+                    <h2>Descubriste el número secreto!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inclusión del archivo JavaScript para la lógica del juego -->
+    <script src="app.js"></script>
+</body>
+
+</html>
